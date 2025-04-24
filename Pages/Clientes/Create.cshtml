@@ -2,3 +2,19 @@
 @model MyApp.Namespace.CreateModel
 @{
 }
+<div class="container">
+    <h1>Insercion de clientes</h1>
+    <hr>
+    <form action="" method="post" >
+        <label asp-for="Cliente.Nombres">Ingrese nombres</label>
+        <input type="text" asp-asp-for="Cliente.nombres" class="form_control">
+        <br><br>
+        <label asp-for="Cliente.Apellidos">Ingrese apellidos</label>
+        <input type="text" asp-asp-for="Cliente.apellidos" class="form_control">
+        <br><br>
+        <label asp-for="Cliente.Dni">Ingrese DNI</label>
+        <input type="text" asp-asp-for="Cliente.DNI" class="form_control">
+        <br><br>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
